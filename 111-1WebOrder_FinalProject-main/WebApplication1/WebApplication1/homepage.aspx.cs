@@ -186,7 +186,8 @@ namespace WebApplication1
         protected void Button4_Click(object sender, EventArgs e)
         {
             Response.Cookies["UserName_register"].Value = HttpUtility.UrlEncode("未登入");
-            Response.Cookies["UserName"].Value = HttpUtility.UrlEncode("未登入");
+            Response.Cookies["UserName"].Value = null;
+                HttpUtility.UrlEncode("未登入");
             Response.Redirect("login.aspx");
         }
 

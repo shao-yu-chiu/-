@@ -99,7 +99,7 @@ namespace WebApplication1
 
 
                         command_I.ExecuteNonQuery();
-                        Response.Redirect("homepage.aspx");
+                        Response.Redirect("login.aspx");
                 }
             }
             }

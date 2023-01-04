@@ -20,7 +20,8 @@
             <br />
             <br />
         
-        <div style="text-align:center;position:relative;top:20%;left:50%;transform:translate(-50%,-50%);width:400px;">
+        <div style="text-align:center;position:relative;top:50%;left:50%;width:400px;">
+            
             <div style="border:3px solid black;">
 
                 <br />

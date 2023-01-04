@@ -13,13 +13,14 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
            if(Request.Cookies["UserName"] == null)
             {
                 Response.Cookies["UserName"].Value = HttpUtility.UrlEncode("未登入");
             }
             else
-            {   
+            {
+                
                 if(Request.Cookies["UserName_register"] == null)
                 {
                     Response.Cookies["UserName_register"].Value = HttpUtility.UrlEncode("未登入");
@@ -29,7 +30,11 @@ namespace WebApplication1
                 {
                     Response.Write("<div style='position:relative;left:50%;transform:translate(-50%); width:500px;border: 3px solid rgb(0, 0, 0); border-radius:6px; text-align:center; '><div style='color: #EE8872;border-radius:6px;'><h1 >請先登入</h1></div></div>");
                 }
-                    Label1.Text = HttpUtility.UrlDecode(Request.Cookies["UserName_register"].Value); 
+                else {
+                    Response.Redirect("homepage.aspx");
+                }
+                    Label1.Text = HttpUtility.UrlDecode(Request.Cookies["UserName_register"].Value);
+                
             }
         }
 

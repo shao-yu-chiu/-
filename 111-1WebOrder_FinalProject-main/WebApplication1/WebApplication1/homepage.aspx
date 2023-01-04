@@ -24,7 +24,7 @@
             <br />
             <br />
             <div style="display:flex; text-align:center;">
-            <div style="flex:1;">提示:凡購買商品滿1000元即可獲得一次抽獎機會</div>
+            <div style="flex:1;"></div>
             </div><div><br /></div>
             <div style="background-color:#BACBD4;position:relative;left:50%;transform:translate(-50%); width:33%;border: 3px solid rgb(0, 0, 0); border-radius:6px; text-align:center;">
                 <h2>菜單</h2>
